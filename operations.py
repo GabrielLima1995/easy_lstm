@@ -1,3 +1,5 @@
+from sklearn.preprocessing import MinMaxScaler
+
 def normalize_transform(tensor,sc):
     
   for i in range(tensor.shape[1]):
@@ -13,3 +15,4 @@ def normalize_fit(tensor):
     tensor[:, i, :] = scalers[i].fit_transform(tensor[:, i, :]) 
 
   return tensor,scalers
+

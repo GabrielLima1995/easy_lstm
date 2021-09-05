@@ -1,4 +1,6 @@
 def to_lstm(dataframes,time_step,features_name):
+  import librosa,librosa.display
+
   data = []
   for i in dataframes:
     l=[]
